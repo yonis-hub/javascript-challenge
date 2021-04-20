@@ -1,8 +1,20 @@
+//load the page
 console.log("index.js loaded")
 
-// get reference to the table body
+// view the ufo data from data.js
+console.log(data)
 
+// get reference to the table body
 var tbody = d3.select("tbody");
+
+// get reference to the button on the page
+var button = d3.select("#filter-btn");
+
+// get reference tot he input element on the page
+var inputField = d3.select("#form-control");
+
+
+
 
 // view the ufo data from data.js
 console.log(data)
