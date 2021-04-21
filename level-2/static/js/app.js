@@ -12,7 +12,7 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 // get reference to the button on the page
-var button = d3.select("#filter-btn");
+var filterButton = d3.select("#filter-btn");
 
 // get reference tot he input element on the page
 var inputField = d3.select("#form-control");
@@ -43,7 +43,7 @@ function filterTable() {
 }
 
 // test the click function 
-button.on('click', filterTable);
+filterButton.on('click', filterTable);
 
 
 
