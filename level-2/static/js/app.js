@@ -54,19 +54,19 @@ function filterTable() {
     }
 
     if (inputCity) {
-        dataFilter = dataFilter.filter(tableData => tableData.datetime === inputCity);
+        dataFilter = dataFilter.filter(tableData => tableData.city === inputCity);
     }
     
     if (inputState) {
-        dataFilter = dataFilter.filter(tableData => tableData.datetime === inputState);
+        dataFilter = dataFilter.filter(tableData => tableData.state === inputState);
     }
 
     if (inputCountry) {
-        dataFilter = dataFilter.filter(tableData => tableData.datetime === inputCountry);
+        dataFilter = dataFilter.filter(tableData => tableData.country === inputCountry);
     }
 
     if (inputShape) {
-        dataFilter = dataFilter.filter(tableData => tableData.datetime === inputShape);
+        dataFilter = dataFilter.filter(tableData => tableData.shape === inputShape);
     }
 
     //clear the table body with empyt string
